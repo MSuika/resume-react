@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,323 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1080px;
+}
+
+body p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+
+/* General styles */
+
+h2 {
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+main section {
+    position: relative;
+}
+
+hr {
+    margin-bottom: 27px;
+}
+
+section hr:before {
+    position: absolute;
+    content: "";
+    top: 38px;
+    left: -1px;
+    width: 72px;
+    height: 10px;
+    background: #7ABCAC;
+}
+
+.about-me hr:before,
+.links hr:before,
+.Education hr:before,
+.Personal-skills hr:before,
+.Technical-skills hr:before {
+    position: absolute;
+    content: "";
+    top: 75px;
+    left: -1px;
+    width: 72px;
+    height: 10px;
+    background: #7ABCAC;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header section:first-of-type {
+    height: 61px;
+    background: #7ABCAC;
+}
+
+header section:last-of-type {
+    position: relative;
+    top: -36px;
+    width: 586px;
+    height: 189px;
+    margin: auto;
+    border: solid 4px black;
+    text-align: center;
+}
+
+header section:last-of-type h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56.25px;
+    padding-top: 43px;
+    padding-bottom: 19px;
+}
+
+header section:last-of-type p {
+    width: 248px;
+    height: 28px;
+    color: white;
+    background: black;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.13px;
+    margin: auto;
+}
+
+/* main */
+
+main {
+    margin: 0 5px 0 5px;
+}
+
+/* About me */
+
+.about-me {
+    order: 2;
+    max-width: 600px;
+}
+
+h2:first-of-type {
+    margin-top: 35px;
+}
+
+main .about-me p {
+    font-weight: 500;
+    margin-bottom: 92px;
+}
+
+/* Links */
+main .links {
+    width: 100%;
+    max-width: 258.73px;
+    margin-bottom: 58px;
+    order: 1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+
+a:hover, a:focus, a:active {
+    color: #7ABCAC;
+}
+
+/* about-me & links flex*/
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    transition: ease all .5s; /* neveikia? */
+}
+
+/* Education */
+
+main .Education {
+    margin-bottom: 74px;
+}
+
+main .Education hr:last-of-type {
+    margin: 17px 0 17px 0;
+    width: 80%;
+}
+
+/* Personal skills + Technical skills */
+
+main .Technical-skills p, main .Personal-skills p {
+    padding: 0 10px 0 10px;
+    margin-bottom: 30px;
+    width: max-content;
+    border-radius: 11px;
+}
+
+.Personal-skills p:nth-last-of-type(3) {
+    background: #7ABCAC;
+}
+
+.Personal-skills p:nth-last-of-type(2) {
+    background: #D8DA79;
+}
+.Personal-skills p:nth-last-of-type(1) {
+    background: #C29486;
+}
+.Technical-skills p:nth-last-of-type(3) {
+    background: #7ABCAC;
+}
+.Technical-skills p:nth-last-of-type(4) {
+    background: #7ABCAC;
+}
+.Technical-skills p:nth-last-of-type(1) {
+    background: #D8DA79;
+}
+.Technical-skills p:nth-last-of-type(2) {
+    background: #D8DA79;
+}
+
+/* Work experience */
+main .Work-experience .container {
+    display: flex;
+}
+
+.container div {
+    margin-right: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+    border-right: 2px solid #DCDCDC;
+}
+
+.container div:last-of-type {
+    border-right: transparent;
+}
+
+.container p:first-of-type {
+    text-align: center;
+}
+
+.container p:nth-last-of-type(2) {
+    text-align: center;
+}
+
+.container p {
+    text-align: left;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.container div p:last-of-type {
+    margin-top: 22px;
+    text-transform: none
+}
+
+.container li {
+    margin-top: 8px;
+    margin-left: 25px;
+    text-align: left;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    height: 113px;
+    padding-top: 32px;
+    padding-bottom: 100px;
+}
+
+footer div {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div h3{
+    text-align: center;
+    width: 248px;
+    height: 28px;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+footer div a {
+    margin-top: 12px;
+    text-align: center;
+}
+
+footer div:first-of-type p {
+    padding-bottom: 30px;
+}
+
+/* Other */
+
+#hr {
+    margin-top: 84px;
+}
+
+#hr hr:before {
+    background: none;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 900px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    main .Work-experience .container {
+        flex-direction: column;
+    }
+
+    #hr {
+        margin-bottom: 67px;
+    }
+
+    main .Work-experience .container div {
+        border: transparent;
+    }
+
+    footer {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
